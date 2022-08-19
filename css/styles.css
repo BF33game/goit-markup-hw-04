@@ -255,19 +255,83 @@ body{
 .team-work{
     font-size: 16px;
     line-height: 1.18;
-    padding-bottom: 30px;
+    padding-bottom: 16px;
 }
-.team-network-list{
+.team-soc-list{
     display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding-bottom: 30px;
+    
 }
-.team-network-link{
+.team-soc-link{
     width: 44px;
     height: 44px;
-}
-.team-svg{
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     fill: #AFB1B8;
-
 }
+/*-----------------------footer soc link----------------------------*/
+.team-soc-link-footer{
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.team-soc-icon-footer{
+    fill: var(--white-color);
+}
+.team-soc-link-footer:hover,
+.team-soc-link-footer:focus{
+    background-color: var(--accent-text-color);
+}
+.team-soc-link-footer:hover .team-soc-icon,
+.team-soc-link-footer:focus .team-soc-icon{
+   fill:var(--white-color);
+}
+/*-------------------------------------------------------------------------*/
+.team-soc-icon{
+    fill: #AFB1B8;
+}
+.team-soc-link:hover,
+.team-soc-link:focus{
+    background-color: var(--accent-text-color);
+}
+.team-soc-link:hover .team-soc-icon,
+.team-soc-link:focus .team-soc-icon{
+   fill:var(--white-color);
+}
+/*---------------company----------------------*/
+.company-list {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+.company-item {
+    height: 92px;
+    width :170px;
+}
+.company-link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: #AFB1B8;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+}
+.company-link:hover,
+.company-link:focus{
+    fill: var(--accent-text-color);
+    border: 1px solid var(--accent-text-color);
+}
+
 /*Футер*/
 .footer{
     background-color: var(--background-color);
@@ -296,7 +360,7 @@ body{
 /*Отступ адреса и емайла в футере*/
 .bottom-list:not(:last-child)
 {
-margin-bottom: 9px;
+    margin-bottom: 9px;
 }
 
 .bottom-adress:hover,
@@ -305,6 +369,24 @@ margin-bottom: 9px;
 .bottom-nav:focus
 {
     color: var(--accent-text-color);
+}
+.footer-container{
+    display: flex;
+    gap:70px;
+}
+.footer-soc-wrap{
+    width: 206px;
+    height: 80px;
+
+}
+.footer-title{
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+text-transform: uppercase;
+color: var(--white-color);
+margin-bottom: 20px;
+
 }
 /*Фильр кнопок Портфоио*/
 .header-border{
