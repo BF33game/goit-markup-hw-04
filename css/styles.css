@@ -281,6 +281,7 @@ body{
     align-items: center;
     justify-content: center;
     background-color: rgba(255, 255, 255, 0.1);
+    fill: var(--white-color);
 }
 .team-soc-icon-footer{
     fill: var(--white-color);
